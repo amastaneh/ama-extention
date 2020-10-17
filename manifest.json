@@ -2,9 +2,13 @@
     "name": "Web Developer Toolbox",
     "description": "The Web Developer Toolbox is a browser extension toolbox with various web developer tools for the software developer, website, and web application development as a back-end or front-end software developer.",
     "version": "1.0",
-    "manifest_version": 1,
+    "manifest_version": 2,
     "browser_action": {
         "default_popup": "main.html",
         "default_icon": "web-developer-toolbox.png"
+    },
+    "background": {
+        "script": ["background.js"],
+        "persistent": false
     }
 }
